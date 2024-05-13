@@ -12,4 +12,10 @@ def homePage():
 
 @app.route('/students')
 def students():
-    return render_template('students.html')
+    items = [
+        {'id': 1, 'name': 'Christian', 'c': 'orange', 'price': 100000},
+        {'id': 2, 'name': 'Kai', 'c': 'red', 'price': 500},
+        {'id': 3, 'name': 'Noah', 'c': 'yellow', 'price': 500},
+    ]
+
+    return render_template('students.html', items = items )

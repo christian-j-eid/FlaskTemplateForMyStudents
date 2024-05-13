@@ -10,5 +10,6 @@ app = Flask(__name__)
 def homePage():
     return render_template('base.html')
 
+@app.route('/students')
 def students():
     return render_template('students.html')

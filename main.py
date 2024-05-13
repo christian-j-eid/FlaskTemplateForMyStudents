@@ -9,3 +9,6 @@ app = Flask(__name__)
 @app.route('/home')
 def homePage():
     return render_template('base.html')
+
+def students():
+    return render_template('students.html')
